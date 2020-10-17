@@ -1,5 +1,6 @@
 import pygame
 import sys
+import os
 from game import *
 
 def draw_grid(surface):
@@ -37,8 +38,9 @@ def handle_keys(snake, setting):
 				sys.exit()
 
 def main():
+	os.system("clear")
+	print("Loading...")
 	pygame.init()
-
 	pygame.display.set_caption('Snake')
 	clock = pygame.time.Clock()
 	screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
@@ -56,6 +58,7 @@ def main():
 	hit = pygame.mixer.Sound('sounds/hit.mp3')
 	music = pygame.mixer.music.load('sounds/music.mp3')
 	pygame.mixer.music.play(-1)
+	os.system("clear")
 
 	score = 0
 	while(True):
