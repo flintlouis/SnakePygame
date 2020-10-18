@@ -81,7 +81,8 @@ def main():
 			if not setting.mute:
 				bitesound.play()
 			snake.add_body()
-			apple.randomize_position()
+			while apple.position in snake.body:
+				apple.randomize_position()
 			score += 1
 			# Speed up
 			if score == setting.speedup and setting.speedup <= 50:
