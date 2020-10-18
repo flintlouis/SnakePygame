@@ -18,12 +18,12 @@ python main.py
 ```
 ## Controls
 
-W - Up
+W/Up Arrow - Up
 
-A - Left
+A/Left Arrow - Left
 
-S - Down
+S/Down Arrow - Down
 
-D - Right
+D/Right Arrow - Right
 
 M - Mute

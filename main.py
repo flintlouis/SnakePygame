@@ -18,13 +18,13 @@ def handle_keys(snake, setting):
 			pygame.quit()
 			sys.exit()
 		elif event.type == pygame.KEYDOWN:
-			if event.key == ord('a'):
+			if event.key == ord('a') or event.key == pygame.K_LEFT:
 				snake.turn(LEFT)
-			elif event.key == ord('s'):
+			elif event.key == ord('s') or event.key == pygame.K_DOWN:
 				snake.turn(DOWN)
-			elif event.key == ord('d'):
+			elif event.key == ord('d') or event.key == pygame.K_RIGHT:
 				snake.turn(RIGHT)
-			elif event.key == ord('w'):
+			elif event.key == ord('w') or event.key == pygame.K_UP:
 				snake.turn(UP)
 			elif event.key == ord('m'):
 				if setting.mute:
