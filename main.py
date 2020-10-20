@@ -55,7 +55,7 @@ def main():
 	setting = Settings()
 
 	bitesound = pygame.mixer.Sound('sounds/bite.wav')
-	hit = pygame.mixer.Sound('sounds/hit.mp3')
+	hit = pygame.mixer.Sound('sounds/hit.wav')
 	music = pygame.mixer.music.load('sounds/music.mp3')
 	pygame.mixer.music.play(-1)
 	os.system("clear")
